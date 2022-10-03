@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat APP</title>
+</head>
+
+<body>
+    Chat App
+
+    <div id="messages">
+
+    </div>
+
+    <form id="message-form">
+        <input name="message" placeholder="Message" autofocus>
+        <button>Send</button>
+    </form>
+    <button id="send-location">Send Location</button>
+
+    <script  id="message-template" type="text/html">
+        <div>
+            <p>This is a message</p>
+        </div>
+    </script>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+
+</html>
